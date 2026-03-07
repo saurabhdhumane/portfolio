@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FileText, ChevronRight } from 'lucide-react';
+import resumeFile from '../assets/Resume.pdf';
 
 const Hero: React.FC = () => {
   return (
@@ -38,9 +39,12 @@ const Hero: React.FC = () => {
           <a href="#projects" className="group relative px-8 py-4 bg-white text-black font-bold rounded-xl overflow-hidden shadow-[0_0_40px_rgba(34,211,238,0.3)] hover:shadow-[0_0_60px_rgba(34,211,238,0.5)] transition-all">
             <span className="relative z-10 flex items-center gap-2">Explore My Work <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform"/></span>
           </a>
-          <a href="src/assets/Saurabh_Dhumane-Resume.pdf" download className="px-8 py-4 bg-white/5 text-white border border-white/10 font-bold rounded-xl hover:bg-white/10 backdrop-blur-sm transition-all flex items-center gap-2">
+          
+          {/* 2. USE THE IMPORTED VARIABLE IN THE HREF */}
+          <a href={resumeFile} download="Saurabh_Dhumane_Resume.pdf" className="px-8 py-4 bg-white/5 text-white border border-white/10 font-bold rounded-xl hover:bg-white/10 backdrop-blur-sm transition-all flex items-center gap-2">
             <FileText size={18} /> Download CV
           </a>
+          
         </motion.div>
       </div>
     </section>

@@ -3,11 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { MessageSquare, X, Send, Bot, User, Loader2 } from 'lucide-react';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-// Initialize Gemini API
-// NOTE: We will set up the .env file in the next step
+
 const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY || 'AIzaSyAwDBY1qy4Zjb_t3GMG5tTfYlSuc1WZUiE');
 
-// This is the "Brain" of your AI. It tells the bot how to act.
 const SYSTEM_PROMPT = `You are the personal AI assistant for Saurabh Dhumane, a Senior MERN Stack Developer with over 3.5 years of professional experience. 
 Your goal is to answer recruiter questions about Saurabh's experience, skills, and projects. 
 Key facts to know:
