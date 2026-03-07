@@ -1,6 +1,4 @@
 
-
-
 import React from 'react';
 import { motion, useScroll } from 'framer-motion';
 import Navbar from './components/Navbar';
@@ -9,6 +7,7 @@ import Hero from './sections/Hero';
 import Skills from './sections/Skills';
 import Experience from './sections/Experience';
 import Projects from './sections/Projects';
+import Chatbot from './components/Chatbot';
 
 const App: React.FC = () => {
   const { scrollYProgress } = useScroll();
@@ -42,6 +41,7 @@ const App: React.FC = () => {
       <Skills />
       <Experience />
       <Projects />
+      <Chatbot/>
       <Footer />
       
     </div>
