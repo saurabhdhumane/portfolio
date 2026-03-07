@@ -2,7 +2,7 @@
   "name": "Saurabh Dhumane | MERN Stack Developer",
   "short_name": "Saurabh D.",
   "description": "Portfolio of Saurabh Dhumane, an enterprise MERN Stack Engineer.",
-  "start_url": "/",
+  "start_url": ".",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
