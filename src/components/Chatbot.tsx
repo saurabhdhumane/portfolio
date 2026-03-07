@@ -4,7 +4,7 @@ import { MessageSquare, X, Send, Bot, User, Loader2 } from 'lucide-react';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
 
-const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY || 'AIzaSyAwDBY1qy4Zjb_t3GMG5tTfYlSuc1WZUiE');
+const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY || '');
 
 const SYSTEM_PROMPT = `You are the personal AI assistant for Saurabh Dhumane, a Senior MERN Stack Developer with over 3.5 years of professional experience. 
 Your goal is to answer recruiter questions about Saurabh's experience, skills, and projects. 
