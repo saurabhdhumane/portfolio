@@ -1,73 +1,45 @@
-# React + TypeScript + Vite
+# 🚀 Saurabh Dhumane | Senior MERN Stack Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A highly interactive, premium developer portfolio built with React, TypeScript, Tailwind CSS, and Framer Motion. Designed with a modern "glassmorphism" aesthetic, this single-page application showcases my professional journey, enterprise-grade projects, and technical arsenal.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer](https://img.shields.io/badge/Framer-Black?style=for-the-badge&logo=framer&logoColor=blue)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Demo
+**[View the Live Portfolio Here](https://saurabhdhumane.github.io/portfolio/)**
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Dynamic Aurora Background:** Animated, blurred gradient orbs that pulse and shift behind a frosted glass layer.
+* **Scroll Progress Indicator:** A custom neon gradient bar that tracks reading progress across the top of the viewport.
+* **Asymmetric Experience Timeline:** A premium, dual-column layout for desktop that separates metadata (dates, tech stack) from descriptive bullet points for effortless reading.
+* **Categorized Skills Grid:** Technical competencies organized cleanly into Frontend, Backend, and DevOps/Cloud.
+* **Interactive Project Cards:** Glassmorphism cards with smooth hover states, revealing GitHub and Live Demo links.
+* **Fully SEO Optimized:** Configured with Open Graph tags, Twitter Cards, semantic HTML, and a custom web manifest for mobile viewing.
+* **100% Responsive:** Flawlessly adapts from ultra-wide monitors down to mobile devices.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* **Framework:** React 18 (via Vite)
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS v4
+* **Animations:** Framer Motion
+* **Icons:** Lucide React
+* **Deployment:** GitHub Pages
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📂 Project Architecture
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+The codebase is modularized for enterprise scalability:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```text
+src/
+├── components/       # Reusable UI building blocks (Navbar, ProjectCard, etc.)
+├── data/             # Decoupled resume data (Experiences, Projects, Skills)
+├── sections/         # Main page segments (Hero, Skills, Experience)
+├── types/            # Global TypeScript interfaces
+├── App.tsx           # Master layout assembler
+├── index.css         # Tailwind directives and global styles
+└── main.tsx          # Application entry point
