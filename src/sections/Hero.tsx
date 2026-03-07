@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}
           className="text-6xl md:text-8xl font-extrabold tracking-tight mb-6"
         >
-          I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-cyan-400 to-blue-500 animate-gradient-x">Nikhil Waghmare</span>
+          I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-cyan-400 to-blue-500 animate-gradient-x">Saurabh Dhumane</span>
         </motion.h1>
 
         <motion.p 
@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
           <a href="#projects" className="group relative px-8 py-4 bg-white text-black font-bold rounded-xl overflow-hidden shadow-[0_0_40px_rgba(34,211,238,0.3)] hover:shadow-[0_0_60px_rgba(34,211,238,0.5)] transition-all">
             <span className="relative z-10 flex items-center gap-2">Explore My Work <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform"/></span>
           </a>
-          <a href="/resume.pdf" download className="px-8 py-4 bg-white/5 text-white border border-white/10 font-bold rounded-xl hover:bg-white/10 backdrop-blur-sm transition-all flex items-center gap-2">
+          <a href="src/assets/Saurabh_Dhumane-Resume.pdf" download className="px-8 py-4 bg-white/5 text-white border border-white/10 font-bold rounded-xl hover:bg-white/10 backdrop-blur-sm transition-all flex items-center gap-2">
             <FileText size={18} /> Download CV
           </a>
         </motion.div>

@@ -17,14 +17,14 @@ const Footer: React.FC = () => {
         <h2 className="text-2xl font-bold text-white mb-6">Let's connect.</h2>
         
         <div className="flex gap-6 mb-10">
-          <FooterIcon href="mailto:nikhilsw2000@gmail.com" icon={<Mail />} />
-          <FooterIcon href="https://github.com/yourusername" icon={<Github />} />
-          <FooterIcon href="https://linkedin.com/in/yourusername" icon={<Linkedin />} />
-          <FooterIcon href="tel:+919860850969" icon={<Phone />} />
+          <FooterIcon href="mailto:saurabhdhumneraje@gmail.com" icon={<Mail />} />
+          <FooterIcon href="https://github.com/saurabhdhumane" icon={<Github />} />
+          <FooterIcon href="https://in.linkedin.com/in/saurabh-dhumane" icon={<Linkedin />} />
+          <FooterIcon href="tel:+918888211972" icon={<Phone />} />
         </div>
 
         <p className="text-slate-500 text-sm font-medium">
-          © {new Date().getFullYear()} Nikhil Waghmare. Crafted with React & Framer Motion.
+          © {new Date().getFullYear()} Saurabh Dhumane. Crafted with React & Framer Motion.
         </p>
       </div>
     </footer>
