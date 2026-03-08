@@ -17,7 +17,7 @@ const Experience: React.FC = () => {
 
       <div className="relative border-l-2 border-white/10 pl-8 ml-4 md:ml-0 md:pl-0 md:border-none space-y-12 md:space-y-20">
         {/* Desktop Split Line (At the 30% mark) */}
-        <div className="hidden md:block absolute left-[30%] top-0 bottom-0 w-px bg-gradient-to-b from-fuchsia-500 via-cyan-500 to-transparent"></div>
+        <div className="hidden md:block absolute left-[30%] top-0 bottom-0 w-px bg-gradient-to-bg from-fuchsia-500 via-cyan-500 to-transparent"></div>
 
         {experiences.map((exp, index) => (
           <TimelineNode 
