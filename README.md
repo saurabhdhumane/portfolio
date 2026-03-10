@@ -9,7 +9,7 @@ A highly interactive, premium developer portfolio built with React, TypeScript, 
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 
 ## 🔗 Live Demo
-**[View the Live Portfolio Here](https://saurabhdhumane.github.io/portfolio/)**
+**[View the Live Portfolio Here](https://saurabhdhumane.com/)**
 
 ## ✨ Key Features
 
