@@ -6,7 +6,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 
 const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY || '');
 
-const SYSTEM_PROMPT = `You are the personal AI assistant for Saurabh Dhumane, a Senior MERN Stack Developer with over 3.5 years of professional experience. 
+const SYSTEM_PROMPT = `You are the personal AI assistant for Saurabh Dhumane, a Senior MERN Stack Developer with over 4.5 years of professional experience. 
 Your goal is to answer recruiter questions about Saurabh's experience, skills, and projects. 
 Key facts to know:
 - Experience: 3.5+ years architecting scalable backend systems and high-performance React user interfaces.
