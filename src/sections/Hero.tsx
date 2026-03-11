@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FileText, ChevronRight } from 'lucide-react';
-import resumeFile from '../assets/Resume.pdf';
+import resumeFile from '../assets/SAURABH_DHUMANE_MEARN_STACK_DEVELOPER_4.2.pdf';
 
 const Hero: React.FC = () => {
   return (

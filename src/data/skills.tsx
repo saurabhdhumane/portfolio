@@ -1,7 +1,10 @@
-import { 
-  Layout, Server, Database, Code2, Smartphone, 
-  Cloud, Box, GitBranch, ShieldCheck, Code, 
-  FileCode, Brush, Palette 
+import {
+  Layout, Server, Database, Code2, Smartphone,
+  Cloud, Box, GitBranch, ShieldCheck, Code,
+  FileCode, Brush, Palette,
+  Users,
+  Terminal,
+  Layers
 } from 'lucide-react';
 
 export const skillCategories = [
@@ -35,6 +38,17 @@ export const skillCategories = [
       { icon: <Cloud />, name: "AWS & Droplets", color: "text-orange-400" },
       { icon: <GitBranch />, name: "Git & GitHub", color: "text-orange-600" },
       { icon: <ShieldCheck />, name: "JWT & OAuth", color: "text-fuchsia-400" },
+    ]
+  },
+  {
+    title: "Architecture, Tools & Agile",
+    skills: [
+      { icon: <Layers />, name: "MERN Stack", color: "text-blue-500" },
+      { icon: <Server />, name: "Microservices & MVC", color: "text-purple-400" },
+      { icon: <Code />, name: "SOLID Principles", color: "text-green-400" },
+      // { icon: <GitBranch />, name: "Git & GitHub", color: "text-orange-600" },
+      { icon: <Terminal />, name: "Postman & VS Code", color: "text-orange-400" },
+      { icon: <Users />, name: "Agile & Scrum", color: "text-blue-300" },
     ]
   }
 ];
