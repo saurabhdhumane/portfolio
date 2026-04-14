@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, ExternalLink, Code2 } from 'lucide-react';
+import { ExternalLink, Code2, Play } from 'lucide-react';
 import type { ProjectCardProps } from '../type/index';
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, tags, index, githubUrl, liveUrl }) => {
@@ -19,7 +19,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, tags, ind
         <div className="absolute inset-0 flex items-center justify-center gap-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40 backdrop-blur-sm z-10">
           {githubUrl && (
             <a href={githubUrl} target="_blank" rel="noreferrer" className="p-3 bg-white/10 rounded-full hover:bg-cyan-500/20 hover:text-cyan-400 text-white transition-all hover:scale-110">
-              <Github size={24} />
+              <Play size={24} />
             </a>
           )}
           {liveUrl && (

@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }}
           className="text-lg md:text-2xl text-slate-400 max-w-3xl mb-10 leading-relaxed font-light"
         >
-          A passionate <strong className="text-white font-semibold">MERN Stack Engineer</strong> with 4.5+ years of experience architecting scalable backend systems and high-performance user interfaces.
+          A passionate <strong className="text-white font-semibold">MERN Stack Engineer</strong> with 3.5+ years of experience architecting scalable backend systems and high-performance user interfaces.
         </motion.p>
 
         <motion.div 
